@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>登录</h2>
+@using (Html.BeginForm("Login", "Home"))
+{
+    @Html.TextBox("userName")
+    <br/>
+    @Html.TextBox("password",null,new{type="password"})
+    <button type="submit">登录</button>
+}

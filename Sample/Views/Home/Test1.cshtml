@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Test1";
+}
+
+<h2>Test1</h2>
+@using (Html.BeginForm())
+{
+    @Html.TextBox("id")
+    <button type="submit">提交</button>
+}
+
+@Html.ActionLink("有权限的页面","Test2")
